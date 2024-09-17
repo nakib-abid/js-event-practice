@@ -7,15 +7,31 @@
 </head>
 <body>
     <!-- এটা সাধারণত ব্যবহার হবেনা -->
+     <!-- option 1 -->
     <h1 onclick="console.log('I am clicked')">DOM Special Events</h1>
-    <button title="This is a tooltip" onclick="console.log(7)">Click Me</button>
+    <button title="This is a tooltip" onclick="console.log(7)">Click Me</button> &nbsp;
     <button onclick="console.log(65)">Another Button</button>
+    <br>
+    <br>
+    <button onclick="document.body.style.backgroundColor = 'yellow'">Make Yellow</button> &nbsp;
+    <!-- এটা মাঝে মাঝে ব্যবহার হবে -->
+     <!-- option 2 -->
+    <button onclick="makeRed()">Make Red</button> &nbsp;
+
+    <!-- option 3 -->
+    <button id="make-blue">Make Blue</button> &nbsp;
+    <button id="make-purple">Make Purple</button> &nbsp;
+
+    <!-- option 4 এটা বেশি ব্যবহার হবে -->
+     <button id="make-pink">Make Pink</button>
+     <button id="make-green">Make Green</button>
+     <button id="make-goldenrod">Make GolderRod</button>
 
 
 
     <!-- javascript code -->
     <script>
-        console.log('this is same file')
+      
     </script>
     <script src="js/events.js"></script>
 </body>
